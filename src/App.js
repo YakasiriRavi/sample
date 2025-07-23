@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './App.css';
+import Main from "./components/main";
 import Parent from "./parentComp/Parent";
 function App() {
   // BABEL will convert JSX TO VANILLA JS OR PLAIN JS---> THIS WILL UNDERSTOOD BY THE BROWSER.
@@ -7,10 +8,7 @@ function App() {
   const [value, setValue] = useState("")
   return (
     <div className="App">
-      <h1>Parent Section</h1>
-      <h2>Bangalore</h2>
-      <h2>Anil</h2>
-      <Parent />
+     <Main/>
     </div>
   );
 }
